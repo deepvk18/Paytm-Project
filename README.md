@@ -1,9 +1,14 @@
-- Clone the repo
+# Paytm App 
+#### functionality includes-
+1. Adding Money from Bank Account.
+2. Sending Money
+3. Seeing all these transactions simultaneously
 
-```jsx
-git clone https://github.com/100xdevs-cohort-2/week-17-final-code
-```
+## BankWebhook-
+The Bank will hit this service to acknowledge us of the payment being done.
 
+
+## Steps to Run-
 - npm install
 - Run postgres either locally or on the cloud (neon.tech)
 
