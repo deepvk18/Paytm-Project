@@ -7,12 +7,13 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "db:generate": "cd packages/db && npx prisma generate && cd ../..",
-    "start": "cd ./apps/user-app && npm run start && cd .. && cd bank-webhook && npm run start",
+    "start": "concurrently \"npm --prefix ./apps/user-app start\" \"npm --prefix ./apps/bank-webhook start\"",
     "install:prod": "npm install --omit=dev"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*",
+    "concurrently": "^9.1.2",
     "prettier": "^3.2.5",
     "turbo": "latest"
   },
