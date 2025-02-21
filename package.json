@@ -7,7 +7,7 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "db:generate": "cd packages/db && npx prisma generate && cd ../..",
-    "start-user-app": "cd ./apps/user-app && npm run start && cd .. && cd bank-webhook && npm run start",
+    "start": "cd ./apps/user-app && npm run start && cd .. && cd bank-webhook && npm run start",
     "install:prod": "npm install --omit=dev"
   },
   "devDependencies": {
